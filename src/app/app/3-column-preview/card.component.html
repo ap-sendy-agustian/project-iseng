@@ -1,0 +1,12 @@
+<div class="container d-flex justify-content-center">
+    <ng-container *ngFor="let card of listCards">
+        <div class="card" [ngStyle]="{'background-color': card.color}">
+            <div class="card-body">
+              <img class="mb-4" src={{card.logo}} alt="">
+              <p class="card-title mb-4">{{card.title}}</p>
+              <p class="card-text mb-5">{{card.text}}</p>
+              <a href="#" class="btn mt-4" [ngStyle]="{'color': card.color}">Learn More</a>
+            </div>
+        </div>
+    </ng-container>
+</div>
