@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "3-column-preview": {
+    "project-iseng": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -17,8 +17,8 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/3-column-preview",
-            "index": "src/index.html",
+            "outputPath": "dist/project-iseng",
+            "index": "index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
@@ -69,10 +69,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "3-column-preview:build:production"
+              "browserTarget": "project-iseng:build:production"
             },
             "development": {
-              "browserTarget": "3-column-preview:build:development"
+              "browserTarget": "project-iseng:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -80,7 +80,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "3-column-preview:build"
+            "browserTarget": "project-iseng:build"
           }
         },
         "test": {
@@ -103,5 +103,5 @@
       }
     }
   },
-  "defaultProject": "3-column-preview"
+  "defaultProject": "project-iseng"
 }
